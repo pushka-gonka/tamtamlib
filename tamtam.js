@@ -23,7 +23,7 @@ class TamTamClient  {
         this.url = 'https://botapi.tamtam.chat'
         this.token = token
     }
-    sendMessages ({ chatId, text } = {}) {
+    sendMessage ({ chatId, text } = {}) {
         if (!isValidInt(chatId)) {
             throw new Error('NO CHAT ID')
         }
